@@ -10,11 +10,12 @@
     body 
 {
     /* background-image:  url('https://www.linkpicture.com/q/image_391.jpg'); */
-    background: linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0)), url('https://www.linkpicture.com/q/image_391.jpg');;
-  background-size:cover;
-  background-position: center;
-
-  background-repeat: no-repeat;
+    background: linear-gradient(to right, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0)), url('https://www.linkpicture.com/q/image_391.jpg');;
+  background-size: fill;
+  
+  background-position: auto;
+  object-fit: fill;
+  background-repeat: no repeat;
   color: rgb(255,500, 0);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -22,6 +23,7 @@
   }
   #newclass{
     display: flex;
+    filter: brightness(1);
     align-items: center;
     justify-content: center;
     margin-left:3em ;
@@ -29,15 +31,15 @@
  .input-group{
     padding: 20px;
     margin-left: 15px;
-    
+    filter: brightness(1);
  }
   .Converter {
     padding: 165px;
     margin-left: 20px;
-    
+    filter: brightness(1);
   }
   .container {
-    
+    filter: brightness(1);
     position: center;
     height: 150px;
     width: 1200px;
@@ -51,33 +53,34 @@
     transform: translate(-50%,-50%);
     color: white;
     text-align: center;
-
+filter: brightness(1);
 }
-  .background {
+  /* .background {
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
+    filter: brightness(0);
     
-  }
+  } */
 
   h1{
-    margin-left: 1em;
+    margin-left: 1em;filter: brightness(1);
   }
   #timer {
-   
+   filter: brightness(1);
     margin-top: 50px;
     font-size: 50px;
   }
   
   #buttons {
- 
+ filter: brightness(1);
     margin-top: 50px;
   }
   
   button {
- 
+ filter: brightness(1);
     color:rgb(0, 0, 0);
     width: 110px;
     height: 50px;
@@ -92,17 +95,17 @@
   button:hover{
     background-color: rgb(69, 69, 69);
     border: 2px solid white;
-    color: white;
+    color: white;filter: brightness(1);
   }
   #from-input{
     background: rgba(197, 197, 197, 0);
-    border-radius: 5px;
+    border-radius: 5px;filter: brightness(1);
     border: 2px solid white;
     color: white;
   }
   #from-input2{
     background: rgba(197, 197, 197, 0);
-    border-radius: 5px;
+    border-radius: 5px;filter: brightness(1);
     border: 2px solid white;
     color: white;
   }
@@ -111,24 +114,25 @@
     font-family: sans-serif;
   }
   label{
-    display: flex;
+    display: flex;filter: brightness(1);
     justify-content: flex-start;
     margin-bottom: -1em;
   }
 
-  @media(max-width:800px) {
+  @media(max-width:720px) {
      #newclass{
-      display: flex;
+      display: flex;filter: brightness(1);
       flex-direction: column;
+      
      }
 
      h1{
-      font-size: 1.5em;
+      font-size: 1.5em;filter: brightness(1);
       margin-bottom: -0.5em;
      }
      #newclass{
-    
-    margin-left:0em ;
+    filter: brightness(1);
+    /* margin-left:0em ; */
   }
     
   }
